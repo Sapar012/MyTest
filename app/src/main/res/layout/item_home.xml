@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_s"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginHorizontal="12dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sapar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sapar"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="6dp"
+        app:layout_constraintStart_toEndOf="@+id/img_s"
+        app:layout_constraintTop_toTopOf="@+id/img_s" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="year"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_sapar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sapar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
